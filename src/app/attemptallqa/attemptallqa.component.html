@@ -1,0 +1,60 @@
+<div class="attempt-qiuz">
+    <ng-container *ngIf="!isQuizSubmitted">
+        <div class="info-option">
+            <div class="question-nunmber">
+                <h1>Question {{this.questionIndex+1}} of {{this.questionsList?.length}} ({{quizTimeLeft(quiz_time)}})
+                </h1>
+            </div>
+            <div class="timer">
+                <h1><span
+                        class="time">{{this.questionsList[questionIndex]?.left_time>0?this.questionsList[questionIndex]?.left_time:0}}</span>
+                    sec<span>&#9200;</span></h1>
+            </div>
+        </div>
+        <div class="question-list">
+            <ng-container *ngIf="this.questionsList?.length">
+                <div class="question-item">
+                    <h2 class="question-name">
+                        {{this.questionsList[questionIndex]?.question_name}}
+                    </h2>
+                    <p class="options" [ngClass]="{
+                    'wright':(this.questionsList[questionIndex]?.attempted && option?.answer),
+                    'wrong':(this.questionsList[questionIndex]?.attempted && !option?.answer),
+                    'wright1':((this.questionsList[questionIndex]?.correct) && (this.questionsList[questionIndex]?.attemptedop===option)),
+                    'wrong1':((!this.questionsList[questionIndex]?.correct) && (this.questionsList[questionIndex]?.attemptedop===option)),
+
+                }" (click)="attemed(questionIndex, option)"
+                        *ngFor="let option of this.questionsList[questionIndex]?.options">
+                        <span>{{option?.option}}</span>
+                    </p>
+                </div>
+            </ng-container>
+        </div>
+        <div class="previus-next-qa">
+            <button class="previus" (click)="getprevius()">&#9754;</button>
+            <button class="next" (click)="getnext()">&#9755;</button>
+        </div>
+    </ng-container>
+    <div class="submit-quiz" *ngIf="!isQuizSubmitted">
+        <button (click)="submitQuiz()">Submit</button>
+    </div>
+    <ng-container *ngIf="isQuizSubmitted">
+        <div class="quiz-result">
+            <p><b>candidate name:</b>{{testResult?.name}}</p>
+            <p><b>Total attempted Questions:</b>{{testResult?.attempted}}</p>
+            <p><b>Correct Answered:</b>{{testResult?.correct}}</p>
+            <p><b>Time taken:</b>({{testResult?.time_taken}})</p>
+            <p><b>Obtained Marks:</b>{{testResult?.marks}}</p>
+            <p><b>Total Time:</b>({{testResult?.total_time}})</p>
+            <p><b>Total Marks:</b>{{testResult?.total_marks}}</p>
+            <p><b>Total Questions:</b>{{testResult?.total_qa}}</p>
+            <p><b>Skipped Questions:</b>{{testResult?.not_attempted}}</p>
+            <p><b>Grade:</b>{{testResult?.grade}}</p>
+            <p [ngClass]="{
+                'wright':testResult?.grade===('B'||'B+'||'A'||'A+'),
+                'wrong':testResult?.grade==='F',
+                'intermadiate':testResult?.grade===('C'||'C+'||'D'||'D+'),
+            }"><b>Status:</b>{{testResult?.status}}</p>
+        </div>
+    </ng-container>
+</div>

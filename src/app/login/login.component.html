@@ -1,0 +1,43 @@
+<div class="login-field">
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div class="usermail">
+            <label for="usermail">Email<span class="text-danger">*</span></label>
+            <input formControlName="usermail" [ngClass]="{ 'input-valid': (sub || f['usermail'].touched) && f['usermail'].valid, 
+            'input-invalid': (sub || f['usermail'].touched || f['usermail'].dirty) && f['usermail'].errors }"
+                autocomplete="off" type="text" id="usermail">
+            <span
+                *ngIf="(sub && f?.['usermail']?.errors) || ((f?.['usermail']?.touched || f?.['usermail']?.dirty) && f?.['usermail']?.errors)"
+                class="text-danger">
+                <p class="mp-zero" *ngIf="f?.['usermail']?.errors?.['space']">space not allowed!</p>
+                <p class="mp-zero" *ngIf="f?.['usermail']?.errors?.['required']">Email is required!</p>
+                <p class="mp-zero"
+                    *ngIf="f?.['usermail']?.errors?.['email'] ||f?.['usermail']?.errors?.['invalidEmail']">
+                    Invalid Email!</p>
+            </span>
+            <span
+                *ngIf="(sub && f?.['usermail']?.errors===null) || ((f?.['usermail']?.touched || f?.['usermail']?.dirty) && f?.['usermail']?.errors===null)"
+                class="text-success">
+                <p class="mp-zero">Good to go!</p>
+            </span>
+        </div>
+        <div class="password">
+            <label for="password">Password<span class="text-danger">*</span></label>
+            <input formControlName="password" [ngClass]="{ 'input-valid': (sub || f['password'].touched) && f['password'].valid, 
+            'input-invalid': (sub || f['password'].touched || f['password'].dirty) && f['password'].errors }"
+                type="password" id="password">
+            <span
+                *ngIf="(sub && f?.['password']?.errors) || ((f?.['password']?.touched || f?.['password']?.dirty) && f?.['password']?.errors)"
+                class="text-danger">
+                <p class="mp-zero" *ngIf="f?.['password']?.errors?.['required']">Password is required!</p>
+            </span>
+            <span
+                *ngIf="(sub && f?.['password']?.errors===null) || ((f?.['password']?.touched || f?.['password']?.dirty) && f?.['password']?.errors===null)"
+                class="text-success">
+                <p class="mp-zero">Good to go!</p>
+            </span>
+        </div>
+        <div class="submit-from">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>

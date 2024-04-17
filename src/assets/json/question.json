@@ -1,0 +1,529 @@
+{
+  "questions": [
+    {
+      "question_name": "Which command is used to create a new Angular project?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "ng new",
+          "answer": true
+        },
+        {
+          "option": "ng create",
+          "answer": false
+        },
+        {
+          "option": "ng generate",
+          "answer": false
+        },
+        {
+          "option": "ng init",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is the purpose of NgModule in Angular?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "To define a component's template",
+          "answer": false
+        },
+        {
+          "option": "To define a module's dependencies",
+          "answer": true
+        },
+        {
+          "option": "To define a service's methods",
+          "answer": false
+        },
+        {
+          "option": "To define a directive's behavior",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "Which Angular feature is used for two-way data binding?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "ng-if",
+          "answer": false
+        },
+        {
+          "option": " ng-bind",
+          "answer": false
+        },
+        {
+          "option": " ng-model",
+          "answer": true
+        },
+        {
+          "option": "ng-repeat",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is Angular CLI used for?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "Building Angular applications",
+          "answer": true
+        },
+        {
+          "option": "Testing Angular applications",
+          "answer": false
+        },
+        {
+          "option": "Managing Angular dependencies",
+          "answer": false
+        },
+        {
+          "option": " Creating Angular components",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "Which decorator is used to define a component in Angular?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "@Component",
+          "answer": true
+        },
+        {
+          "option": "@Directive",
+          "answer": false
+        },
+        {
+          "option": "@Module",
+          "answer": false
+        },
+        {
+          "option": "@Service",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "In Angular, what is the purpose of the ActivatedRoute service?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "To handle HTTP requests",
+          "answer": false
+        },
+        {
+          "option": "To manage browser history",
+          "answer": false
+        },
+        {
+          "option": "To provide information about the current route",
+          "answer": true
+        },
+        {
+          "option": "To communicate between components",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What does the term \"Angular Ivy\" refer to?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "Angular's package manager",
+          "answer": false
+        },
+        {
+          "option": "Angular's new rendering engine",
+          "answer": true
+        },
+        {
+          "option": "Angular's testing framework",
+          "answer": false
+        },
+        {
+          "option": "Angular's command-line interface",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "Which command is used to start the Angular development server?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "ng start",
+          "answer": false
+        },
+        {
+          "option": " ng serve",
+          "answer": true
+        },
+        {
+          "option": "ng run",
+          "answer": false
+        },
+        {
+          "option": "ng build",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is the purpose of the HttpClientModule in Angular?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": " To handle HTTP requests",
+          "answer": true
+        },
+        {
+          "option": "To manage browser history",
+          "answer": false
+        },
+        {
+          "option": "To provide routing functionality",
+          "answer": false
+        },
+        {
+          "option": " To create HTTP interceptors",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "Which Angular feature is used for dependency injection?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "@Injectable",
+          "answer": true
+        },
+        {
+          "option": "@Inject",
+          "answer": false
+        },
+        {
+          "option": "@Dependency",
+          "answer": false
+        },
+        {
+          "option": "@Provide",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is the command to generate a new component in Angular CLI?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "ng generate component",
+          "answer": true
+        },
+        {
+          "option": "ng create component",
+          "answer": false
+        },
+        {
+          "option": "ng add component",
+          "answer": false
+        },
+        {
+          "option": "ng new component",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "Which file is used to define the routes in an Angular application?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": " app.routes.ts",
+          "answer": false
+        },
+        {
+          "option": "route.config.ts",
+          "answer": false
+        },
+        {
+          "option": "app.module.ts",
+          "answer": false
+        },
+        {
+          "option": "app-routing.module.ts",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "question_name": "Which Angular directive is used to add conditional logic in templates?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": " *ngIf",
+          "answer": true
+        },
+        {
+          "option": "*ngFor",
+          "answer": false
+        },
+        {
+          "option": "*ngSwitch",
+          "answer": false
+        },
+        {
+          "option": "*ngTemplate",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is the purpose of the TestBed in Angular testing?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "To configure testing modules",
+          "answer": true
+        },
+        {
+          "option": "To mock HTTP requests",
+          "answer": false
+        },
+        {
+          "option": "To compile Angular components",
+          "answer": false
+        },
+        {
+          "option": "To simulate user interactions",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "Which operator is used to handle asynchronous operations in Angular?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "subscribe()",
+          "answer": true
+        },
+        {
+          "option": "map()",
+          "answer": false
+        },
+        {
+          "option": "mergeMap()",
+          "answer": false
+        },
+        {
+          "option": "filter()",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is the purpose of the Angular Compiler in the context of Ivy rendering engine?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "To generate JavaScript code from Angular templates",
+          "answer": false
+        },
+        {
+          "option": "To optimize application performance during runtime",
+          "answer": false
+        },
+        {
+          "option": "To analyze and transform Angular components into rendering instructions",
+          "answer": true
+        },
+        {
+          "option": "To manage dependency injection across application modules",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "In Angular, what is the difference between ViewChild and ContentChild decorators?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "ViewChild is used to inject a reference to a component or directive, while ContentChild is used for DOM manipulation.",
+          "answer": false
+        },
+        {
+          "option": "ViewChild is used to query and access a child component or directive in the parent component's template, while ContentChild is used to query and access content projected into a component.",
+          "answer": true
+        },
+        {
+          "option": " ViewChild is used for component communication, while ContentChild is used for dependency injection.",
+          "answer": false
+        },
+        {
+          "option": "ViewChild is used to query and access content projected into a component, while ContentChild is used to query and access a child component or directive in the parent component's template.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What is Angular Universal and what problem does it solve in Angular applications?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "Angular Universal is a server-side rendering solution that pre-renders Angular applications to improve performance and SEO.",
+          "answer": true
+        },
+        {
+          "option": "Angular Universal is a state management library for Angular applications, similar to Redux.",
+          "answer": false
+        },
+        {
+          "option": "Angular Universal is a testing framework for Angular applications, providing tools for end-to-end and unit testing.",
+          "answer": false
+        },
+        {
+          "option": "Angular Universal is a routing library for Angular applications, offering advanced routing features.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "What are Angular Pipes and how are they used in Angular templates?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "Angular Pipes are used for asynchronous data fetching in Angular applications, similar to Observables",
+          "answer": false
+        },
+        {
+          "option": "Angular Pipes are used to transform data in templates by applying various operations such as formatting, filtering, and sorting.",
+          "answer": true
+        },
+        {
+          "option": "Angular Pipes are used for dependency injection in Angular services.",
+          "answer": false
+        },
+        {
+          "option": "Angular Pipes are used to define routing configurations in Angular applications.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "question_name": "In Angular, what is the purpose of the ng-container directive and how is it different from other structural directives like ngIf and ngFor?",
+      "left_time":60,
+      "attemptedop":{},
+      "attempted": false,
+      "correct": false,
+      "marks":5,
+      "options": [
+        {
+          "option": "The ng-container directive is used to provide a placeholder for dynamic content in Angular templates without adding an extra element to the DOM. Unlike ngIf and ngFor, ng-container does not create a new element in the DOM, making it suitable for cases where you need structural directives but do not want to affect the DOM structure.",
+          "answer": true
+        },
+        {
+          "option": "The ng-container directive is used to define a template that can be reused across multiple components in an Angular application. Unlike ngIf and ngFor, ng-container does not participate in rendering directly; instead, it serves as a structural container for the template logic, allowing for better code organization and maintainability.",
+          "answer": false
+        },
+        {
+          "option": "The ng-container directive is used to encapsulate and conditionally render multiple elements in Angular templates. Unlike ngIf and ngFor, ng-container allows for more complex conditional rendering scenarios by providing a lightweight wrapper around multiple elements without affecting the DOM structure.",
+          "answer": false
+        },
+        {
+          "option": "The ng-container directive is used to create a virtual container for Angular components and directives. Unlike ngIf and ngFor, ng-container does not render anything directly; instead, it serves as a logical grouping mechanism for organizing template logic and applying structural directives without introducing additional elements to the DOM.",
+          "answer": false
+        },
+        {
+          "option": "The ng-container directive is used to optimize rendering performance in Angular applications by providing a lightweight wrapper around elements that need to be conditionally rendered. Unlike ngIf and ngFor, ng-container allows for more efficient DOM manipulation by avoiding unnecessary element creation and destruction during template rendering.",
+          "answer": false
+        }
+      ]
+    }
+  ],
+  "quiz_time":900000
+}

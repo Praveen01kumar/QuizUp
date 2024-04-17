@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #d3d8e2;
+
+}
+
+
+.text-danger {
+    color: red;
+}
+
+.input-valid {
+    border-color: green !important;
+}
+
+.input-invalid {
+    border-color: red !important;
+}
+
+.mp-zero {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-success {
+    color: green;
+}

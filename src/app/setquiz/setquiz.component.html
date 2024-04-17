@@ -1,0 +1,51 @@
+<div class="setquiz-container">
+    <h1 class="heading-title">Set Your Questions!</h1>
+    <p class="hr-head"></p>
+    <div class="form-creation-field">
+        <form [formGroup]="quizQAForm">
+            <div formArrayName="questions" class="form-box">
+                <div class="question-box" *ngFor="let question of questions()?.controls; let qaIndex=index;">
+                    <div [formGroupName]="qaIndex">
+                        <div style="display: flex;">
+                            <span class="question-index">{{qaIndex+1}}.</span>
+                            <textarea name="question_name"
+                                [ngClass]="validat(quizQAForm.get('questions')?.get(qaIndex.toString())?.get('question_name'))?'invalid-input-field':''"
+                                (input)="autoExpandTextarea($event)" placeholder="Your Question..."
+                                formControlName="question_name" class="qa-input"></textarea>
+                        </div>
+                        <div *ngIf="validat(quizQAForm.get('questions')?.get(qaIndex.toString())?.get('question_name'))"
+                            class="error-message">
+                            Please provide a question!
+                        </div>
+                        <button class="remove-qa-btn" (click)="removeQuestions(qaIndex)"><span>&#10060;</span></button>
+                        <div formArrayName="options" class="option-box">
+                            <div class="options"><span>Options:</span></div>
+                            <div class="option-list">
+                                <div *ngFor="let option of questionsOptions(qaIndex)?.controls; let opIndex = index;">
+                                    <div [formGroupName]="opIndex" class="input-remove">
+                                        <input type="checkbox" class="correct-ans"
+                                            (change)="getChecked(qaIndex, opIndex, $event)" formControlName="answer"
+                                            name="answer_{{qaIndex}}_{{opIndex}}" id="answer_{{qaIndex}}_{{opIndex}}" />
+                                        <input type="text" class="option-input" formControlName="option"
+                                            [ngClass]="{ 'checked-class': isChecked(qaIndex, opIndex) }">
+                                        <button class="option-remove" (click)="removenewOptions(qaIndex,opIndex)"
+                                            [disabled]="questionsOptions(qaIndex).controls.length<=2"><span>&#10060;</span></button>
+                                    </div>
+                                    <div *ngIf="validat(quizQAForm.get('questions')?.get(qaIndex.toString())?.get('options')?.get(opIndex.toString())?.get('option'))"
+                                        class="error-message">
+                                        Please provide an option!
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="option-add"
+                                [disabled]="questionsOptions(qaIndex).controls.length>=5"
+                                (click)="addnewOptions(qaIndex)"><span>&#43;</span></button>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="add-qa-btn" (click)="addNewQuestions()"><span>&#43;</span></button>
+            </div>
+        </form>
+    </div>
+    <div class="create-quiz"><button (click)="onSubmit()">Create</button></div>
+</div>
